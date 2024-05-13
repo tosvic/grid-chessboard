@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --h: 68px;
+    --w: 70px;
+}
+
+body{
+    padding: 2rem 7%;
+    /* background: rgba(205, 255, 253, 0.568); */
+    font-family: sans-serif;
+    font-weight: bold;
+    background: linear-gradient (to bottom rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4), url(./chess.jpg));
+    background-repeat: no-repeat;
+    background-position: cover;
+}
+
+.white {
+    height: var(--h);
+    width: var(--w);
+    background-color: rgba(0, 255, 255, 0.16);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   color: rgb(1, 21, 21);
+
+}
+
+.black {
+    height: var(--h);
+    width: var(--w);
+    background-color: rgb(10, 82, 82);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aqua;
+
+} 
+
+section {
+   width: fit-content;
+    display: grid;
+    grid-template: repeat(8, 1fr) / repeat(8, 1fr);
+    /* grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+}
+
+h1{
+    text-align: center; 
+    font-size: 1.2rem; 
+    color:rgb(27, 62, 62); 
+    font-family: sans-serif;
+}
+
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    
